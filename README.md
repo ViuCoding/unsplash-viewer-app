@@ -4,9 +4,7 @@
 
 ## Background
 
-Para facilitar la creación de documentación y el análisis de esta através de un markdown parser se ha creado esta libreria de *templates* de README. 
-
-De esta forma nos aseguramos la estandarización y la calidad de la documentación generada en nuestros retos.
+This project was created to participate in the Vueling Tech Hack challenge hosted by [Nuwe.io](https://nuwe.io/dev/competitions/vueling-tech-hack)
 
 ## Usage
 
