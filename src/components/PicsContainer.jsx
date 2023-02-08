@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
+import LoadingSpinner from "./LoadingSpinner";
 
 export default function PicsContainer() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -38,7 +39,7 @@ export default function PicsContainer() {
         LOAD MORE PICTURES
       </button>
 
-      {loading && <div>Loading...</div>}
+      {loading && <LoadingSpinner />}
       {error && <div>{error}</div>}
     </div>
   );
