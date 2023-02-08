@@ -1,14 +1,6 @@
-# readme-templates
-
->Templates para empezar a trabjar con de forma rápida utilizando los standar de common-readme. Estos se aplican en [nuwe.io](https://nuwe.io)
-
 ## Background
 
-This project was created to participate in the Vueling Tech Hack challenge hosted by [Nuwe.io](https://nuwe.io/dev/competitions/vueling-tech-hack)
-
-## Usage
-
-Simplente clonar y rellenar cada uno de las secciones con la info que se pide.
+This project was created to participate in the Vueling Tech Hack challenge hosted by [Nuwe.io](https://nuwe.io/dev/competitions/vueling-tech-hack).
 
 ## Installation
 
@@ -17,6 +9,10 @@ Simplente clonar y rellenar cada uno de las secciones con la info que se pide.
     npm clone https://github.com/ViuleDev/unsplash-viewer-app.git
 ```
 Simply clone the main branch on your machine and then run "npm i" to install all the dependencies used in the project.
+
+OR
+
+Visit the hosted project right [here](https://unsplash-viewer-viuledev.netlify.app/).
 
 ## Reconocimientos 
 
