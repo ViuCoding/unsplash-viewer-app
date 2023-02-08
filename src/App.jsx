@@ -1,9 +1,9 @@
+import PicsContainer from "./components/PicsContainer";
 
 function App() {
-
   return (
     <div className='App'>
-      <h1>app</h1>
+      <PicsContainer />
     </div>
   );
 }
