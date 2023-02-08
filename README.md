@@ -3,6 +3,10 @@
 This project was created to participate in the Vueling Tech Hack challenge hosted by [Nuwe.io](https://nuwe.io/dev/competitions/vueling-tech-hack).
 The stack used is: React, CSS3 and Vite as a bundler.
 
+## Codefactor Feedback
+
+[![CodeFactor](https://www.codefactor.io/repository/github/viuledev/unsplash-viewer-app/badge)](https://www.codefactor.io/repository/github/viuledev/unsplash-viewer-app)
+
 ## Installation
 
 ```shell
