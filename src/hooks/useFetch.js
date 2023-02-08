@@ -21,9 +21,7 @@ export default function useFetch(URL, pageNum) {
         if (pageNum < 2) {
           setData(prevData => (prevData = res.data));
         } else {
-          setData(prevData => {
-            return prevData.concat(res.data);
-          });
+          setData(prevData => [...prevData, ...res.data]);
         }
         setLoading(false);
       })

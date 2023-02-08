@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 body {
@@ -21,6 +22,10 @@ img {
   max-width: 100%;
 }
 
+.App {
+  margin: 1rem 0;
+}
+
 /* UTILITY */
 /* UTILITY */
 /* UTILITY */
@@ -28,6 +33,21 @@ img {
 .container {
   margin: 0 auto;
   width: 95%;
+}
+
+.btn {
+  display: block;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 30px;
+  outline: none;
+  border: 4px solid crimson;
 }
 
 /* COMPONENTS */
