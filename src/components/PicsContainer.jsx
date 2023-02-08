@@ -3,6 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 export default function PicsContainer() {
   const [pageNumber, setPageNumber] = useState(1);
+
   const {
     loading,
     data: pictures,
@@ -20,6 +21,9 @@ export default function PicsContainer() {
           ))}
         </div>
       )}
+
+      {loading && <div>Loading...</div>}
+      {error && <div>{error}</div>}
     </div>
   );
 }

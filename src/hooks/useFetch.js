@@ -27,7 +27,10 @@ export default function useFetch(URL, pageNum) {
         }
         setLoading(false);
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
   }, [URL, pageNum]);
 
   return { loading, data, error };

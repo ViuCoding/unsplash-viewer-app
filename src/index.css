@@ -34,7 +34,7 @@ img {
 /* COMPONENTS */
 /* COMPONENTS */
 
-#pics-grid {
+.pics-grid {
   column-count: 1;
   column-gap: 0;
   line-height: 0;
@@ -53,7 +53,7 @@ img {
 /* MEDIA QUERIES */
 
 @media (min-width: 500px) {
-  #pics-grid {
+  .pics-grid {
     column-count: 2;
   }
 }
@@ -63,7 +63,7 @@ img {
     max-width: 1300px;
   }
 
-  #pics-grid {
+  .pics-grid {
     column-count: 3;
   }
 }
