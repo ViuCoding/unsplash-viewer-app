@@ -16,7 +16,7 @@ The stack used is: React, CSS3 and Vite as a bundler.
     # Install dependencies
     npm i
     
-    # Run Development server
+    # Start a local development server
     npm run dev
 ```
 Simply clone the main branch on your machine and then run "npm i" to install all the dependencies used in the project.
