@@ -1,31 +1,35 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-export default function useFetch(URL) {
+export default function useFetch(URL, pageNum) {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
-  async function fetchPics() {
-    setLoading(true);
-    try {
-      const res = await fetch(URL);
-      
-      if (!res.ok) {
-        throw new Error("Unable to fetch data at the moment...");
-      }
-
-      const parsedFetch = await res.json();
-      setData(prevData => prevData = parsedFetch);
-    } catch (error) {
-      setError(error);
-    }
-
-    setLoading(false);
-  }
-
   useEffect(() => {
-    fetchPics();
-  }, []);
+    setLoading(true);
+
+    axios({
+      method: "GET",
+      url: URL,
+      params: {
+        page: pageNum,
+        client_id: "MoQqxaBNV_Be1-RPGe1sRBS_DW54KOoRWG93STTRlk8",
+      },
+    })
+      .then(res => {
+        if (pageNum < 2) {
+          setData(prevData => (prevData = res.data));
+        } else {
+          setData(prevData => [...prevData, ...res.data]);
+        }
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, [URL, pageNum]);
 
   return { loading, data, error };
 }
