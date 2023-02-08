@@ -11,20 +11,19 @@ export default function PicsContainer() {
   } = useFetch("https://api.unsplash.com/photos", pageNumber);
 
   const handleClick = () => {
-    setTimeout(() => {
-      setPageNumber(prevPageNum => prevPageNum + 1);
-    }, 1500);
+    setPageNumber(prevPageNum => prevPageNum + 1);
   };
 
+  console.log(pictures);
   return (
     <div className='pics-container'>
-      <button className='btn' onClick={handleClick}>
+      <button className='btn' onClick={handleClick} disabled={loading}>
         LOAD MORE PICTURES
       </button>
       {pictures && (
         <div className='pics-grid'>
           {pictures.map((pic, index) => (
-            <div key={pic.id} className='picture-card'>
+            <div key={index} className='picture-card'>
               <img
                 src={pic.urls.regular}
                 alt={`Picture ${index}`}

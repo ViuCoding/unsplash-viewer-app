@@ -40,9 +40,8 @@ img {
   font-family: inherit;
   font-weight: bold;
   font-size: 1.3rem;
-  width: 95%;
-  margin: 0 auto;
-  padding: 10px 0;
+  width: 100%;
+  padding: 20px 0;
   cursor: pointer;
   background-color: transparent;
   border-radius: 30px;
